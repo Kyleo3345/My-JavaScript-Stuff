@@ -1,0 +1,22 @@
+
+
+img{ width: 100%; height: 600px;}
+
+.slider { width: 500px; 
+	height: 600px; 
+	margin: 20px auto; 
+	position: relative; 
+	border: 5px solid black;
+	}
+button{
+	padding: 20px;
+	border: none;
+	background: cyan;
+	font-size: 30px;
+	color: black;
+	position: absolute;
+	top: 45%;
+	cursor: pointer;
+}
+.next{ margin-left: 400px;}
+

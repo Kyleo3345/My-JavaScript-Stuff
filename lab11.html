@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Lab11 JS</title>
+<meta charset="utf-8" />
+<style> 
+div {
+  transition: all linear 0.5s;
+  background-color: lightblue;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.ng-hide {
+  height: 0;
+  width: 0;
+  background-color: transparent;
+  top:-200px;
+  left: 200px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+<script src="lab11jscode.js"></script>
+</head>
+<body ng-app="myApp">
+<h1>Click this button to hide: <input type="checkbox" ng-model="myCheck"></h1>
+<div ng-hide="myCheck">
+<p>
+My favorite things to do:
+Be lazy and watch Television.
+Play Video Games.
+And be Lazy.
+</p>
+</div>
+
+</body>
+</html>
